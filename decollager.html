@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Splitter</title>
+    <link rel="stylesheet" href="decollager.css">
+</head>
+
+<body>
+    <span id=pnlLeft>
+        <div>
+            <p><b>Mouse wheel</b> + SHIFT (+ALT)</p>
+            <input id=smallStep type="checkbox">Small Step (F2)
+        </div>
+        <div>
+            
+        </div>
+        <div>
+            <fieldset>
+                <legend>Preview</legend>
+            <div>
+                Width: <input disabled id=inpW size=5 value = "113">
+                Height:<input disabled id=inpH size=5 value = "82">
+            </div>
+                <canvas id=canv></canvas>
+            </fieldset>
+        </div>
+        <fieldset>
+            <legend>Clipped Images:</legend>
+            <div>
+                <button onclick="deleteClips()">Delete All</button>
+                <button onclick="deleteSelectedClips()">Delete Selected</button>
+                <span id="clip-counter"></span>
+            </div>
+            <div id=output>
+            </div>
+        </fieldset>
+    </span>
+    <span id=pnlRight>
+        <fieldset>
+            <legend>Source Image</legend>
+            <div>
+                Image URI:&nbsp;                
+                <input id='img-path' placeholder="C:\img1.jpg">
+                <button onclick="loadImage()">Load Image</button>                
+            </div>
+            <div>
+                <img id=src-img src="sample-collage.jpg">
+            </div>
+        </fieldset>
+    </span>
+    <div><div><input type="checkbox"></div><canvas></canvas></div>
+    
+    <script src="decollager.js"></script>
+</body>
+</html>

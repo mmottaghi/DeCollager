@@ -1,0 +1,50 @@
+* {
+    font-family: sans-serif;
+    font-size: 97%;
+    color: gray;
+}
+
+body {
+    display: flex;
+}
+
+#pnlLeft {
+    vertical-align: top;
+}
+
+#pnlRight img {
+    margin: 5px;
+}      
+
+canvas {
+    border: 1px solid black;
+}
+
+fieldset {
+    border: 1px solid silver;
+    padding: 5px;
+}
+
+#output {
+    overflow: auto;
+    white-space: nowrap;            
+    min-width: 300px;
+}
+
+#output > div {
+    display: inline-block;
+    margin: 5px;
+}
+
+#output span input{
+    display: block;
+}
+
+body > div:last-of-type {
+    display: none;
+}
+
+::placeholder { 
+  color: silver;
+  opacity: 1;
+}
